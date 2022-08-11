@@ -16,7 +16,6 @@ contract xpBridgeDiscount is Ownable {
 
     function deposit(uint256 _amount) public {
        require(token.balanceOf(msg.sender) >= _amount , "You do not have the amount");
-       token.approve(address(this) , _amount);
        token.transferFrom(msg.sender , address(this) ,_amount);
        emit Deposit(msg.sender, _amount);
     }
