@@ -21,6 +21,7 @@ contract xpBridgeDiscount is Ownable {
     }
 
     function withdraw(uint256 _totalAmount) external onlyOwner {
+      require(token.balanceOf(address(this)) > _totalAmount , "You do not have the amount");
       token.transfer( msg.sender , _totalAmount);
     }
 }
