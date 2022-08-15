@@ -1,4 +1,4 @@
-# xpBridgeDiscount
+# xpBridgeDiscount Contract
 
 A contract that the client is able to stake Erc20 tokens and get a discount on the bridge <br />
 
