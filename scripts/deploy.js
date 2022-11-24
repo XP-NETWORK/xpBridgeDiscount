@@ -6,7 +6,7 @@ async function main() {
     console.log("Account ballance:", (await deployer.getBalance()).toString());
   
     const Token = await ethers.getContractFactory("xpBridgeDiscount");
-    const token = await Token.deploy("0x283a5b6bB7af991B95d2cb523f8b23B2F826508d");   
+    const token = await Token.deploy("0x72224e65662EC8FF1112B823D4b648D2efa7b54B");   
   
     await token.deployed();
   

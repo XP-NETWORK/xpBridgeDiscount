@@ -12,7 +12,7 @@ const BINANCE_PRIVATE_KEY =process.env.PRIVATE_KEY;
   solidity: "0.8.4",
   networks: {
     binance: {
-      url: "https://speedy-nodes-nyc.moralis.io/3749d19c2c6dbb6264f47871/bsc/testnet",
+      url: "https://data-seed-prebsc-2-s2.binance.org:8545/",
       accounts: [`0x${BINANCE_PRIVATE_KEY}`],
     },
   },
